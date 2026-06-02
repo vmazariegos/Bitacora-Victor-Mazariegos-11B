@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitacora Victor Mazariegos</title>
+    <link rel="icon" type="img/png" href="Recursos/IMG/8af2e2c3-24e4-4ecd-a4d9-1feb4b502a7b.tmpSS"> 
+    <style>
+html,body{
+    height: 100%;
+    margin: 0%;
+    font-family: 'Segoe UI', Arial, sans-serif; /* Fuente más moderna */
+    background-color: #f4f4f9; /* Fondo gris muy claro para que resalten las tarjetas */
+}
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+header{
+    padding: 20px;
+    background-color: #003366; /* Azul Capouilliez */
+    color: white;
+}
+
+/* Instrucción 1: Sombra neón ahora en tono dorado/amarillo */
+h1 {
+    text-shadow: 0 0 5px #c5a059, 0 0 10px #e2c285;
+    margin: 0;
+}
+
+/* EL RETO: Clase .semana con los colores del colegio */
+.semana {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #c5a059; /* Detalle dorado */
+    text-align: left;
+    transition: transform 0.2s;
+}
+
+.semana h3 {
+    color: #003366; /* Títulos internos en azul */
+    margin-top: 0;
+}
+
+.semana:hover {
+    transform: translateY(-5px);
+}
+
+main{
+    flex:1; 
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    border-top: 3px solid #c5a059; /* Borde dorado divisorio */
+    background-color: #002244; /* Azul más oscuro para el cierre */
+    color: white;
+}
+
+/* Instrucción 2: Efecto zoom en el logo */
+footer img {
+    width: 80px;
+    transition: transform 0.3s ease;
+    /* Si el logo es oscuro, esta línea lo hace resaltar en blanco (opcional): */
+    /* filter: brightness(0) invert(1); */
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
+
+@media(max-width:600px){
+footer{
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bitácora de Víctor Mazariegos</h1>
+    </header>
+    <main>
+        <h4 style="color: #666;">Contenido de mi página web</h4>
+
+        <div class="semana">
+            <h3>Semana 1: Introducción a CSS</h3>
+            <p>Hoy aprendí a crear efectos de neón y a diseñar tarjetas elegantes para mi bitácora escolar con los colores institucionales.</p>
+        </div>
+        <div class="semana">
+            <h3>Semana 2: Efectos y Animaciones</h3>
+            <p>El video contiene la simulación de mi proyecto realizado en thinkercard</p>
+                <video width="100%" controls style="border-radius: 8px; margin-top: 15px;">
+        <source src="Recursos/Grabación 2026-05-12 122745.mp4" type="video/mp4">
+        Tu navegador no soporta videos.
+    </video>
+        </div>
+
+    </main>
+    <footer>
+        <span>2026 @vmazariegos</span>
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" alt="Logo Colegio">
+    </footer>
+</body>
+</html>
